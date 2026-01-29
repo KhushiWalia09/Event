@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Target date: Jan 31, 2026 (Reporting Time)
-    const targetDate = new Date('January 31, 2026 09:00:00').getTime();
+    // Target date: Feb 6, 2026 (Reporting Time)
+    const targetDate = new Date('February 6, 2026 09:00:00').getTime();
 
     const updateCountdown = () => {
         const now = new Date().getTime();
