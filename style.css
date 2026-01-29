@@ -336,6 +336,15 @@ span {
     letter-spacing: 1px;
 }
 
+.event-img {
+    margin: 1rem 0;
+    transition: var(--transition);
+}
+
+.event-card:hover .event-img {
+    transform: scale(1.05);
+}
+
 .event-levels {
     margin-top: 1.5rem;
 }
@@ -377,11 +386,20 @@ span {
     padding: 100px 0;
 }
 
+.about-consolidated {
+    padding: 0 !important;
+    overflow: hidden;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
-    gap: 3rem;
-    align-items: center;
+    align-items: stretch;
+    /* Stretch to fill height */
+}
+
+.about-text {
+    padding: 4rem 3rem;
 }
 
 .about-text h3 {
@@ -414,8 +432,23 @@ span {
 }
 
 .about-image {
-    text-align: center;
-    padding: 1.5rem !important;
+    position: relative;
+    background: rgba(255, 255, 255, 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem !important;
+    border-left: 1px solid var(--border);
+}
+
+.about-image img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: var(--transition);
+}
+
+.about-consolidated:hover .about-image img {
+    transform: scale(1.02);
 }
 
 .quote {
@@ -617,11 +650,21 @@ span {
 
     .about-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+    }
+
+    .about-image {
+        border-left: none;
+        border-top: 1px solid var(--border);
+        padding: 2rem !important;
+    }
+
+    .about-text {
+        padding: 3rem 2rem;
     }
 
     .about-stats {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
         gap: 1.5rem;
     }
 
