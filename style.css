@@ -463,6 +463,29 @@ span {
     color: #ff3333;
     font-weight: 600;
     font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+.venue-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    border: 1px solid var(--border);
+}
+
+.venue-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.venue-icon {
+    font-size: 1.5rem;
 }
 
 /* Footer */
