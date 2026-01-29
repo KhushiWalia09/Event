@@ -66,40 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // Form Logic
-    const registrationForm = document.getElementById('registration-form');
-    const formStatus = document.getElementById('form-status');
-
-    if (registrationForm) {
-        registrationForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const submitBtn = registrationForm.querySelector('.submit-btn');
-            const originalText = submitBtn.innerText;
-
-            // Loading state
-            submitBtn.innerText = 'Registering...';
-            submitBtn.disabled = true;
-
-            // Simulate API call
-            setTimeout(() => {
-                submitBtn.innerText = 'Registration Successful!';
-                submitBtn.style.background = '#4BB543';
-                formStatus.innerHTML = '<p class="success">You have been successfully registered for Seamtech 2026!</p>';
-
-                registrationForm.reset();
-
-                // Reset button after 3 seconds
-                setTimeout(() => {
-                    submitBtn.innerText = originalText;
-                    submitBtn.disabled = false;
-                    submitBtn.style.background = '';
-                    formStatus.innerHTML = '';
-                }, 3000);
-            }, 1500);
-        });
-    }
-
     // Custom animation handler for observed elements
     const style = document.createElement('style');
     style.innerHTML = `

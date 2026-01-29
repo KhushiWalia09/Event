@@ -27,7 +27,7 @@
             <ul class="nav-links" id="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#events">Events</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">About SEAMEDU</a></li>
                 <li><a href="#register" class="cta-btn" style="text-decoration: none;">Register Now</a></li>
             </ul>
         </nav>
@@ -48,7 +48,7 @@
 
                 <div class="hero-btns fade-in">
                     <a href="#events" class="secondary-btn">View Events</a>
-                    <a href="#register" class="primary-btn">Join Now</a>
+                    <a href="#register" class="primary-btn">Register Today</a>
                 </div>
             </div>
             <div class="hero-bg"></div>
@@ -100,34 +100,44 @@
             </div>
         </section>
 
-        <!-- Registration Section -->
-        <section id="register" class="register-section container">
-            <div class="register-container glass-card fade-in">
-                <h2 class="section-title">Secure Your <span>Spot</span></h2>
-                <p class="register-subtitle">Join us for the Seamtech Events 2026. Limited seats available!</p>
+        <!-- About SEAMEDU Section -->
+        <section id="about" class="about-section container">
+            <h2 class="section-title">Institutional <span>Excellence</span></h2>
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <h3>Pioneering Future-Ready Education</h3>
+                    <p>Seamedu has been a pioneer in shaping the future of <strong>Media, Technology, Law, Design, and
+                            Management</strong> education since 2008. With a strong focus on innovation, creativity, and
+                        industry alignment, we offer diverse programs designed to equip students for today's dynamic
+                        professional landscape.</p>
+                    <p>At Seamedu, learning goes beyond traditional classrooms. With a focus on hands-on training,
+                        workshops, industry collaborations, live projects, and internships, our students engage with
+                        emerging trends and technologies. This experiential approach bridges the gap between academia
+                        and industry, helping students build both technical expertise and creative problem-solving
+                        skills – making them not just job-ready, but future-ready.</p>
+                    <div class="about-stats">
+                        <div class="stat"><span>15+</span> Years Excellence</div>
+                        <div class="stat"><span>5+</span> Major Disciplines</div>
+                        <div class="stat"><span>100%</span> Industry Aligned</div>
+                    </div>
+                </div>
+                <div class="about-image glass-card">
+                    <img src="seamedu-about.png" alt="SEAMEDU Overview" style="width: 100%; border-radius: 20px;">
+                    <p class="quote">"Industry Aligned, Future Defined"</p>
+                </div>
+            </div>
+        </section>
 
-                <form id="registration-form" class="registration-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="event">Select Event</label>
-                        <select id="event" required>
-                            <option value="" disabled selected>Choose an event</option>
-                            <option value="tech-world">Tech World Challenge</option>
-                            <option value="guess-output">Guess the Output</option>
-                            <option value="tech-meme">Tech Meme/Reel</option>
-                            <option value="all">All Events</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="cta-btn submit-btn">Confirm Registration</button>
-                    <div id="form-status" class="form-status"></div>
-                </form>
+        <!-- QR Registration Section -->
+        <section id="register" class="qr-register-section container">
+            <div class="qr-container glass-card fade-in">
+                <h2 class="section-title">Ready to <span>Compete?</span></h2>
+                <p>Register now to showcase your skills and win amazing rewards at Seamtech Events 2026.</p>
+                <div class="qr-box">
+                    <img src="qrcode.jpg" alt="Registration QR Code" class="qr-img">
+                    <p class="qr-caption">Scan this QR for Registration</p>
+                </div>
+                <p class="limited-seats">⚠️ Limited seats available. Register ASAP!</p>
             </div>
         </section>
     </main>
