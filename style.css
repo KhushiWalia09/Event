@@ -324,8 +324,16 @@ span {
 
 .glass-card h3 {
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     margin-top: 1rem;
+}
+
+.event-time {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .event-levels {
@@ -487,6 +495,11 @@ span {
 .venue-icon {
     font-size: 1.5rem;
 }
+
+.venue-icon {
+    font-size: 1.5rem;
+}
+
 
 /* Footer */
 .footer {
