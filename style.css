@@ -673,6 +673,16 @@ span {
         height: 200px;
     }
 
+    .venue-info {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .venue-item {
+        justify-content: center;
+    }
+
     .events-grid {
         grid-template-columns: 1fr;
     }
